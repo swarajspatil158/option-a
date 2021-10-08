@@ -6,10 +6,13 @@ import Language from './Language';
 
 function FormikControl (props) {
   const { control, ...rest } = props
+  
+  // console.log(props)
   switch (control) {
     case 'input':
       return <Name {...rest} />
-    case 'textarea':
+
+    case 'number':
       return <Designation {...rest} />
     case 'select':
       return <Language {...rest} />

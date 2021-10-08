@@ -61,7 +61,7 @@ function Container() {
                         className="border-2 py-2 xl:py-3 px-4 text-xs xl:text-sm rounded-full mt-1 w-full mb-6"
                         options={dropdownOptions}
                         />
-                      <button type='submit'  disabled={!formik.isValid} className="flex items-center gap-2 justify-center bg-form-label py-2 xl:py-2 w-2/5 xl:w-1/2 bg-blue-500 text-white font-semibold rounded-full mx-auto mb-12 text-sm xl:text-base">
+                      <button type='submit' disabled={!formik.isValid} className="flex items-center gap-2 justify-center bg-form-label py-2 xl:py-2 w-2/5 xl:w-1/2 bg-blue-500 text-white font-semibold rounded-full mx-auto mb-12 text-sm xl:text-base">
                         Login
                       </button>
                     </Form>

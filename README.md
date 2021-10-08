@@ -1,4 +1,4 @@
-> [Figma link](https://docs.google.com/document/d/1O5ZIrJ-91gHGVAN-3ziIL8NiR8SvPeIPYtDpHhnXJgY/edit)
+> [Figma link](https://www.figma.com/file/MZL7b6NCknR37rZX9a2pYC/React-JS-Candidate-test?node-id=0%3A1)
 
 # Option-a UI (Hybrolabs Assessment)
 ![demo](./src/assets/option-a.gif)

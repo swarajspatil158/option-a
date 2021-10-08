@@ -1,6 +1,6 @@
 > [Figma link](https://www.figma.com/file/MZL7b6NCknR37rZX9a2pYC/React-JS-Candidate-test?node-id=0%3A1)
 
-# Option-a UI (Hybrolabs Assessment)
+# Option-a UI (Hybrowlabs Assessment)
 ![demo](./src/assets/option-a.gif)
 ## Desktop view
 ![desktop](https://github.com/swarajspatil158/option-a/blob/main/src/assets/op-a1.png)

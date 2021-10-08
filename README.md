@@ -1,4 +1,4 @@
-[Try here](https://swarajspatil158.github.io/option-a/build/)
+> [Figma link](https://docs.google.com/document/d/1O5ZIrJ-91gHGVAN-3ziIL8NiR8SvPeIPYtDpHhnXJgY/edit)
 
 # Option-a UI (Hybrolabs Assessment)
 ![demo](./src/assets/option-a.gif)

@@ -10,7 +10,7 @@ var op = JSON.parse(localStorage.getItem("allData"));
                         <span className="font-bold">Name: </span>
                         <span className="font-mono">{ele.name}</span>
                         <br/>
-                        <span className="font-bold">Desi: </span>
+                        <span className="font-bold">Designation: </span>
                         <span className="font-mono">{ele.desi}</span>
                         <br/>
                         <span className="font-bold">Language: </span>

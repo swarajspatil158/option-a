@@ -37,8 +37,8 @@ function Container() {
                           desi:values.designation,
                            lang:values.language}]
                            localStorage.setItem('allData', JSON.stringify(allData));
-                          window.location.href = "./Output";
-        document.querySelector('.App').innerHTML=`<div>${values.name}</div><div>${values.designation}</div><div>${values.language}</div>`
+                          window.location.href = "/#/output";
+        // document.querySelector('.App').innerHTML=`<div>${values.name}</div><div>${values.designation}</div><div>${values.language}</div>`
       
     }
     return (

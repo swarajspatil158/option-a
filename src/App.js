@@ -13,8 +13,9 @@ function App() {
     <div className="App">
       
       <Switch >
-        <Route path="/option-a/output" component={Output} />
-      <Route path="/option-a" exact component={Container} />
+        
+      <Route path="/" exact component={Container} />
+      <Route path="/output" component={Output} />
       </Switch>
     </div>
     </HashRouter>

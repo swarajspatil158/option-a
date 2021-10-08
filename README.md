@@ -21,6 +21,6 @@
 The page will reload if you make edits.
 - You will also see any lint errors in the console.
 ## Technologies used :technologist:
-- [Reactjs](https://devsnest.in)
-- [Redux](https://devsnest.in)
-- [Nodejs](https://devsnest.in)
+- [Reactjs](https://reactjs.org/)
+- [Tailwind Css](https://tailwindcss.com/)
+- [Formik](https://formik.org/)

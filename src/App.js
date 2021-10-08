@@ -2,12 +2,14 @@ import './App.css';
 import Container from './components/Container'
 import Output from './components/Output';
 import {
+  HashRouter,
   Route, 
-  Switch,BrowserRouter} from "react-router-dom";
+  Switch} from "react-router-dom";
 
 function App() {
+
   return (
-    <BrowserRouter>
+    <HashRouter>
     <div className="App">
       
       <Switch >
@@ -15,7 +17,7 @@ function App() {
       <Route path="/option-a" exact component={Container} />
       </Switch>
     </div>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 

@@ -25,7 +25,22 @@ function Container() {
         designation:Yup.number().required('Required'),
         language:Yup.string().required('Required')
     })
-    const onSubmit = values => console.log('Form data', values);
+    // const onSubmit = values => {
+    
+
+        // document.querySelector('.App').innerHTML=`<div>${values.name}</div><div>${values.designation}</div><div>${values.language}</div>`
+      
+    // }
+    const onSubmit = values => {
+    
+        const allData = [{name:values.name,
+                          desi:values.designation,
+                           lang:values.language}]
+                           localStorage.setItem('allData', JSON.stringify(allData));
+                          window.location.href = "./Output";
+        document.querySelector('.App').innerHTML=`<div>${values.name}</div><div>${values.designation}</div><div>${values.language}</div>`
+      
+    }
     return (
         <div>
           <Formik 
@@ -61,9 +76,12 @@ function Container() {
                         className="border-2 py-2 xl:py-3 px-4 text-xs xl:text-sm rounded-full mt-1 w-full mb-6"
                         options={dropdownOptions}
                         />
-                      <button type='submit' disabled={!formik.isValid} className="flex items-center gap-2 justify-center bg-form-label py-2 xl:py-2 w-2/5 xl:w-1/2 bg-blue-500 text-white font-semibold rounded-full mx-auto mb-12 text-sm xl:text-base">
+                      <button type='submit' style={{ pointerEvents: (!formik.isValid)  ? 'none' : 'auto' }} disabled={!formik.isValid} className="flex items-center gap-2 justify-center bg-form-label py-2 xl:py-2 w-2/5 xl:w-1/2 bg-blue-500 text-white font-semibold rounded-full mx-auto mb-12 text-sm xl:text-base">
+                      {/* <  Link to='/option-a/output' disabled > */}
                         Login
-                      </button>
+                      
+                        {/* </  Link> */}
+                        </button>
                     </Form>
                     <div className="flex gap-2 justify-center text-xs xl:text-base mt-4 font-light text-gray-600">Powered By <img src={Logo} alt="logo" className="h-4 xl:h-6" /></div> 
                     </div>

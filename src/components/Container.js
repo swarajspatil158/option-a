@@ -7,17 +7,11 @@ import Logo from "../assets/Logo.svg"
 
 
 function Container() {
-    const dropdownOptions = [
-        {key:'',value:''},
-        {key: 'English',value:'english'},
-        {key: 'Hindi',value:'hindi'},
-        {key: 'Marathi',value:'marathi'},
-        {key: 'Bengali',value:'bengali'}
-    ]
+    
     const initialValues = {
         name:'',
         designation:0,
-        language:""
+        language:"english"
 
     }
     const validationSchema = Yup.object({
@@ -70,11 +64,13 @@ function Container() {
                         className="border-2 py-2 xl:py-3 px-4 text-xs xl:text-sm rounded-full mt-1 w-full mb-6"
                         />
                       <div className="text-form-label xl:text-xl font-semibold text-blue-500">Language<sup className="text-pink-500 font-bold">*</sup></div>
+                      <div className="meta invisible absolute">
+                      </div>
                         <FormikControl
                         control='select'
                         name='language'
-                        className="border-2 py-2 xl:py-3 px-4 text-xs xl:text-sm rounded-full mt-1 w-full mb-6"
-                        options={dropdownOptions}
+                        className="border-2 py-2 xl:py-3 px-4 text-xs xl:text-sm rounded-full mt-1 w-full mb-6 appearance-none place-content-center"
+                        // options={dropdownOptions}
                         />
                       <button type='submit' style={{ pointerEvents: (!formik.isValid)  ? 'none' : 'auto' }} disabled={!formik.isValid} className="flex items-center gap-2 justify-center bg-form-label py-2 xl:py-2 w-2/5 xl:w-1/2 bg-blue-500 text-white font-semibold rounded-full mx-auto mb-12 text-sm xl:text-base">
                       {/* <  Link to='/option-a/output' disabled > */}
